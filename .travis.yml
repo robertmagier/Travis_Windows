@@ -10,7 +10,7 @@ before_install:
 jobs:
   include:
     - os: windows
-      env: WINDOWS=TRUE
+      env: WINDOWS=TRUE;YARN_GPG=no
       before_install: 
         - powershell Set-ExecutionPolicy -ExecutionPolicy unrestricted
         - npm i -g mocha
