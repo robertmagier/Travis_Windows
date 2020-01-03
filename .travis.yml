@@ -3,7 +3,10 @@ node_js:
   - node
 
 
-before_install: npm i -g yarn
+before_install: 
+  - npm i -g yarn
+  - npm i -g mocha
+  
 jobs:
   include:
     - os: windows
