@@ -1,0 +1,27 @@
+{
+  "name": "travis_windows",
+  "version": "1.0.0",
+  "description": "Testing Repository to Test Travis with Windows Environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertmagier/Travis_Windows.git"
+  },
+  "keywords": [
+    "tes",
+    "travis",
+    "windows"
+  ],
+  "author": "Robert Magier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robertmagier/Travis_Windows/issues"
+  },
+  "homepage": "https://github.com/robertmagier/Travis_Windows#readme",
+  "dependencies": {
+    "mocha": "^6.2.2"
+  }
+}
