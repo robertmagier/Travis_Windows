@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test/*",
-    "windowstest": "mocha test/**/*",
+    "windowstest": "mocha -exit test/**/*",
     "preparewindows": "powershell -File ./helloworld.ps1",
     "prepare": "./helloworld.sh"
   },
