@@ -13,6 +13,7 @@ jobs:
       env: WINDOWS=TRUE
       before_install: 
         - powershell Set-ExecutionPolicy -ExecutionPolicy unrestricted
+        - npm i -g mocha
       install: yarn preparewindows
     - dist: xenial
       env: WINDOWS=FALSE
