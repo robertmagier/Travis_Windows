@@ -1,2 +1,4 @@
 $strString = "Hello World. This is windows installation"
-write-output $strString
+write-host $strString -ForegroundColor Green
+exit 1
+
