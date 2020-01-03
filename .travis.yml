@@ -6,11 +6,13 @@ node_js:
 before_install: 
   - npm i -g yarn
   - npm i -g mocha
-  
+
 jobs:
   include:
     - os: windows
       env: WINDOWS=TRUE
+      before_install: 
+        - powershell Set-ExecutionPolicy -ExecutionPolicy unrestricted
       install: yarn preparewindows
     - dist: xenial
       env: WINDOWS=FALSE
