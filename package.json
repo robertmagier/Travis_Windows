@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha test/*",
     "windowstest": "mocha test/**/*",
-    "preparewindows": "powershell helloworld.ps1",
+    "preparewindows": "powershell -File ./helloworld.ps1",
     "prepare": "./helloworld.sh"
   },
   "repository": {
