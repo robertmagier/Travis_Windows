@@ -1,7 +1,14 @@
 language: node_js
-os: windows
-dist: xenial
-
 node_js:
   - node
 
+
+before_install: npm i -g yarn
+jobs:
+  include:
+    - os: windows
+      env: WINDOWS=TRUE
+      install: yarn preparewindows
+    - dist: xenial
+      env: WINDOWS=FALSE
+      install: yarn prepare

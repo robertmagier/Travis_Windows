@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test/*",
-    "windowstest": "mocha test/**/*"
+    "windowstest": "mocha test/**/*",
+    "preparewindows": "./helloworld.ps1",
+    "prepare": "./helloworld.sh"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
   },
   "homepage": "https://github.com/robertmagier/Travis_Windows#readme",
   "dependencies": {
-    "mocha": "^6.2.2"
+    "mocha": "^6.2.2",
+    "yarn": "^1.21.1"
   }
 }
