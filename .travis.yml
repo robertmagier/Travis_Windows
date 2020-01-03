@@ -13,6 +13,7 @@ jobs:
     - os: windows
       env:
         - YARN_GPG=no
+        - WINDOWS=TRUE
       before_install: 
         - powershell Set-ExecutionPolicy -ExecutionPolicy unrestricted
         - npm i -g mocha
