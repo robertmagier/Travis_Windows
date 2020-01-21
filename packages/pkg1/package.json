@@ -1,0 +1,16 @@
+{
+  "name": "pkg1",
+  "version": "1.0.0",
+  "description": "Test Package #1",
+  "main": "index.js",
+  "author": "Robert Magier",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "mocha --color test/*",
+    "prepare": "echo PREPARE"
+  },
+  "dependencies": {
+    "underscore": "^1.9.1"
+  }
+}
